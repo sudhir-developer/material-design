@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Uttar Pradesh CM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  #clock1{ font-size:9pt; font-weight:normal; color:#ffeed4; padding-top:1px;}
+  .clocktime{ margin-left:10px;}
+  </style>
+  <script type="text/javascript" src="js/clock.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    
+      $.clock.locale = {"pt":{"weekdays":["Domingo","Segunda-feira", "Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira", "Sábado"],"months":["Janeiro","Fevereiro","Março","Abril", "Maio","Junho","Julho","Agosto","Setembro","October","Novembro", "Dezembro"] } };
+      
+      $("#clock1").clock();
+      $("#clock2").clock({"langSet":"it"});
+      $("#clock3").clock({"langSet":"pt"});
+      $("#clock4").clock({"format":"24","calendar":"false"});
+      
+      customtimestamp = new Date();
+      customtimestamp = customtimestamp.getTime();
+      customtimestamp = customtimestamp+1123200000+10800000+14000;
+      $("#clock5").clock({"timestamp":customtimestamp});
+      
+     
+     
+                                           
+    });    
+  </script>
+
+  
+</head>
+<body>
+
+<div class="tp">
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<div style="float:left; font-size:9pt; font-weight:normal; color:#ffeed4;"><i class="fa fa-clock-o"></i> &nbsp; </div>
+          <div id="clock1"> This div will be turned into a dynamic clock</div>
+
+</div>
+<div class="col-sm-4"></div>
+<div class="col-sm-2"><div class="txtcenter"><a style="color:#FFF" class="skip" href="">A-</a> <a style="color:#FFF" class="skip" href="">A</a> <a class="skip"style="color:#FFF" href="">A+</a></div></div>
+<div class="col-sm-2"><div class="txtcenter"><a style="color:#FFF" class="skip" href="">Hindi</a> <a style="color:#FFF" class="skip" href="">English</a> </div></div>
+</div>
+</div>
+
+</div>
+
+
+
+<header>
+<div class="container">
+  <div class="row">
+  <div class="col-sm-4"><a href="index.html"><img src="images/up-logo.png" class="img-responsive"/></a></div>
+  <div class="col-sm-8"><div class="yogi"><img src="images/yogi1.png" class="img-responsive"/></div></div>
+  </div>
+ 
+</div>
+
+</header>
+<div style="background:#ff6304; border-bottom: 3px solid #000;">
+<div class="container">
+ <div class="row">
+  <div class="col-sm-12">
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+
+
+   <div class="collapse navbar-collapse js-navbar-collapse">
+		<ul class="nav navbar-nav">
+			 <li><a href="#">Home</a></li>
+            <!--<li class="dropdown mega-dropdown">
+    			<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3">
+    					<ul>
+							<li class="dropdown-header">Features</li>
+							<li><a href="#">Auto Carousel</a></li>
+                            <li><a href="#">Carousel Control</a></li>
+                            <li><a href="#">Left & Right Navigation</a></li>
+							<li><a href="#">Four Columns Grid</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Fonts</li>
+                            <li><a href="#">Glyphicon</a></li>
+							<li><a href="#">Google Fonts</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Plus</li>
+							<li><a href="#">Navbar Inverse</a></li>
+							<li><a href="#">Pull Right Elements</a></li>
+							<li><a href="#">Coloured Headers</a></li>                            
+							<li><a href="#">Primary Buttons & Default</a></li>							
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Much more</li>
+                            <li><a href="#">Easy to Customize</a></li>
+							<li><a href="#">Calls to action</a></li>
+							<li><a href="#">Custom Fonts</a></li>
+							<li><a href="#">Slide down on Hover</a></li>                         
+						</ul>
+					</li>
+                    <li class="col-sm-3">
+    					<ul>
+							<li class="dropdown-header">Women Collection</li>                            
+                            <div id="womenCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
+                                    <h4><small>Summer dress floral prints</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
+                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
+                                    <h4><small>Denin jacket stamped</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+                                </div>                           
+                              </div>
+                             
+                              <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                            <li class="divider"></li>
+                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+						</ul>
+					</li>
+				</ul>				
+			</li>-->
+            
+            <li><a href="#">CM Profile</a></li>
+            <li><a href="#">CM Office</a></li>
+            <li><a href="#">State Profile</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+            <li><a href="#">CM Programe</a></li>
+            <li><a href="#">Citizen Corner</a></li>
+            <li><a href="#">Contact Us</a></li>
+		</ul>
+        
+        </li>
+         <ul class="nav navbar-nav navbar-right">
+       <!-- <li><p class="navbar-text">Already have an account?</p></li>-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+			<ul id="login-dp" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+								Login via
+								<div class="social-buttons">
+									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+                                or
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+										</div>
+										<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> keep me logged-in
+											 </label>
+										</div>
+								 </form>
+							</div>
+							<div class="bottom text-center">
+								New here ? <a href="#"><b>Join Us</b></a>
+							</div>
+					 </div>
+				</li>
+			</ul>
+        </li>
+      </ul>
+      </ul>
+	</div>
+  </nav>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<!--Latest News-->
+<div class="newsbox">
+<div class="container">
+<div class="row">
+<div class="col-sm-2">
+<div style="padding-top:0px;">
+<img src="images/news.png" class="img-responsive"/>
+</div>
+</div>
+<div class="col-sm-10">
+<div style="padding-top:3px;">
+<marquee behavior="scroll" direction="left" scrollamount="2">
+<p>If you think responsive's simple, I feel bad for you son. We got 99 viewports, but the iPhone's just one. &nbsp;&nbsp;|&nbsp;&nbsp;If you think responsive's simple, I feel bad for you son. We got 99 viewports, but the iPhone's just one.&nbsp;&nbsp;|&nbsp;&nbsp; If you think responsive's simple, I feel bad for you son. We got 99 viewports, but the iPhone's just one.&nbsp;&nbsp;|&nbsp;&nbsp; If you think responsive's simple, I feel bad for you son. We got 99 viewports, but the iPhone's just one.&nbsp;&nbsp;|&nbsp;&nbsp; If you think responsive's simple, I feel bad for you son. We got 99 viewports, but the iPhone's just one.&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+</marquee>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--Latest News-->
+
+
+
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/1.jpg" alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="images/2.jpg" alt="Chania" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="images/3.jpg" alt="Flower" width="460" height="345">
+      </div>
+
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  
+  
+  <!--midile content-->
+  
+  <div style="margin-top:25px;">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-3">
+  <div class="rightbox">
+  
+   <div class="right-inner">
+    <div class="profie"><h3 style="margin:0">CM Profile</h3></div>
+  
+ <div style="padding:10px;">
+<p align="justify">
+ <img src="images/yogi1.png" style="float:left; margin-right:25px;" class="img-responsive img-thumbnail"/>
+ The first way to use media queries is to have the alternate section of CSS right inside your single stylesheet.
+ 
+ </p>
+ 
+ <p align="justify">
+
+ So to target small devices we can use the   
+ </p>
+ 
+ <a class="btn btn-success" href="index.html">View full  profile</a>
+ </div>
+  
+  </div>
+  
+ <div class="right-inner">
+    <div class="profie"><h3 style="margin:0">CM Profile</h3></div>
+  
+ <div style="padding:10px;">
+ <p align="justify">
+ <img src="images/yogi1.png" style="float:left; margin-right:25px;" class="img-responsive img-thumbnail"/>
+ The first way to use media queries is to have the alternate section of CSS right inside your single stylesheet.
+ 
+ </p>
+ 
+ <p align="justify">
+
+ So to target small devices we can use the   
+ </p>
+ 
+ <a class="btn btn-success" href="index.html">View full  profile</a>
+ </div>
+  
+  </div>
+  
+  <div class="right-inner">
+    <div class="profie"><h3 style="margin:0">CM Profile</h3></div>
+  
+ <div style="padding:10px;">
+ <p align="justify">
+ <img src="images/yogi1.png" style="float:left; margin-right:25px;" class="img-responsive img-thumbnail"/>
+ The first way to use media queries is to have the alternate section of CSS right inside your single stylesheet.
+ 
+ </p>
+ 
+ <p align="justify">
+
+ So to target small devices we can use the   
+ </p>
+ 
+ <a class="btn btn-success" href="index.html">View full  profile</a>
+ </div>
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  </div>
+  
+  
+  
+  <div class="col-sm-9">
+  
+  <div class="rightbox">
+  <div class="profie"><h3 style="margin:0">About CM Officers</h3></div>
+  <div class="profilebox">
+  <div class="row">
+  <div class="col-lg-2">
+  <div style="margin-top:20px;">
+  <img src="images/yogi1.png" class="img-responsive img-thumbnail"/>
+  </div>
+  
+  </div>
+  
+  
+  <div class="col-lg-10">
+  <div class="about">
+  <p align="justify">
+  <h4 class="bdr fnt">Yogi Aditya Nath <span>(Principal Secratory)</span></h4>
+
+ </p>
+ 
+ <span style="font-size:15px; font-weight:bold;">Department : </span>  Fire Department, Uttar Pradesh<br/>
+  <span style="font-size:15px; font-weight:bold;">Email ID : </span>  info@gmail.com<br/>
+   <span style="font-size:15px; font-weight:bold;"> Contact No : </span>  +91 0000 000 000<br/>
+    <span style="font-size:15px; font-weight:bold;">Fax : </span>  +91 522 - 0000 000
+ 
+ 
+ 
+ 
+  </div>
+
+  </div>
+  
+  
+  </div>
+  
+  </div>
+  
+  <div class="profilebox">
+  <div class="row">
+  <div class="col-lg-2">
+  <div style="margin-top:20px;">
+  <img src="images/yogi1.png" class="img-responsive img-thumbnail"/>
+  </div>
+  
+  </div>
+  
+  
+  <div class="col-lg-10">
+  <div class="about">
+  <p align="justify">
+  <h4 class="bdr fnt">Yogi Aditya Nath <span>(Principal Secratory)</span></h4>
+
+ </p>
+ 
+ <span style="font-size:15px; font-weight:bold;">Department : </span>  Fire Department, Uttar Pradesh<br/>
+  <span style="font-size:15px; font-weight:bold;">Email ID : </span>  info@gmail.com<br/>
+   <span style="font-size:15px; font-weight:bold;"> Contact No : </span>  +91 0000 000 000<br/>
+    <span style="font-size:15px; font-weight:bold;">Fax : </span>  +91 522 - 0000 000
+ 
+ 
+ 
+ 
+  </div>
+
+  </div>
+  
+  
+  </div>
+  
+  </div>
+  
+  
+  <div class="profilebox">
+  <div class="row">
+  <div class="col-lg-2">
+  <div style="margin-top:20px;">
+  <img src="images/yogi1.png" class="img-responsive img-thumbnail"/>
+  </div>
+  
+  </div>
+  
+  
+  <div class="col-lg-10">
+  <div class="about">
+  <p align="justify">
+  <h4 class="bdr fnt">Yogi Aditya Nath <span>(Principal Secratory)</span></h4>
+
+ </p>
+ 
+ <span style="font-size:15px; font-weight:bold;">Department : </span>  Fire Department, Uttar Pradesh<br/>
+  <span style="font-size:15px; font-weight:bold;">Email ID : </span>  info@gmail.com<br/>
+   <span style="font-size:15px; font-weight:bold;"> Contact No : </span>  +91 0000 000 000<br/>
+    <span style="font-size:15px; font-weight:bold;">Fax : </span>  +91 522 - 0000 000
+ 
+ 
+ 
+ 
+  </div>
+
+  </div>
+  
+  
+  </div>
+  
+  </div>
+  
+  <div class="profilebox">
+  <div class="row">
+  <div class="col-lg-2">
+  <div style="margin-top:20px;">
+  <img src="images/yogi1.png" class="img-responsive img-thumbnail"/>
+  </div>
+  
+  </div>
+  
+  
+  <div class="col-lg-10">
+  <div class="about">
+  <p align="justify">
+  <h4 class="bdr fnt">Yogi Aditya Nath <span>(Principal Secratory)</span></h4>
+
+ </p>
+ 
+ <span style="font-size:15px; font-weight:bold;">Department : </span>  Fire Department, Uttar Pradesh<br/>
+  <span style="font-size:15px; font-weight:bold;">Email ID : </span>  info@gmail.com<br/>
+   <span style="font-size:15px; font-weight:bold;"> Contact No : </span>  +91 0000 000 000<br/>
+    <span style="font-size:15px; font-weight:bold;">Fax : </span>  +91 522 - 0000 000
+ 
+ 
+ 
+ 
+  </div>
+
+  </div>
+  
+  
+  </div>
+  
+  </div>
+  
+  <div class="profilebox">
+  <div class="row">
+  <div class="col-lg-2">
+  <div style="margin-top:20px;">
+  <img src="images/yogi1.png" class="img-responsive img-thumbnail"/>
+  </div>
+  
+  </div>
+  
+  
+  <div class="col-lg-10">
+  <div class="about">
+  <p align="justify">
+  <h4 class="bdr fnt">Yogi Aditya Nath <span>(Principal Secratory)</span></h4>
+
+ </p>
+ 
+ <span style="font-size:15px; font-weight:bold;">Department : </span>  Fire Department, Uttar Pradesh<br/>
+  <span style="font-size:15px; font-weight:bold;">Email ID : </span>  info@gmail.com<br/>
+   <span style="font-size:15px; font-weight:bold;"> Contact No : </span>  +91 0000 000 000<br/>
+    <span style="font-size:15px; font-weight:bold;">Fax : </span>  +91 522 - 0000 000
+ 
+ 
+ 
+ 
+  </div>
+
+  </div>
+  
+  
+  </div>
+  
+  </div>
+  
+  
+ 
+  </div>
+  
+  </div>
+  </div>
+  </div>
+
+  </div>
+  
+  
+   <!--midile content-->
+  
+  
+  <!--important links-->
+  <div style="margin-bottom:50px; margin-top:50px;">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-12">
+  <div style="margin-top:30px; margin-bottom:30px;">
+ <center> <h2>Important Links</h2></center>
+ </div>
+  </div>
+  </div>
+  
+  <div class="row">
+  <div class="col-sm-3">
+  <a href="" style="text-decoration:none">
+  <div class="box-style-2 object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                  <div class="icon-container default-bg"> <i class="fa fa-upload"></i> </div>
+                  <div class="body">
+                  <div class="pad70">
+                    <h2>Tenders</h2>
+                    <p class="link">View Government Tenders</p>
+                  </div>
+                  </div>
+                </div>
+  </a>
+  
+  </div>
+  
+  <div class="col-sm-3">
+  <a href="" style="text-decoration:none">
+  <div class="box-style-2 object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                  <div class="icon-container default-bg"> <i class="fa fa-upload"></i> </div>
+                  <div class="body">
+                  <div class="pad70">
+                    <h2>Tenders</h2>
+                    <p class="link">View Government Tenders</p>
+                  </div>
+                  </div>
+                </div>
+  </a>
+  
+  </div>
+  
+  <div class="col-sm-3">
+  <a href="" style="text-decoration:none">
+  <div class="box-style-2 object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                  <div class="icon-container default-bg"> <i class="fa fa-upload"></i> </div>
+                  <div class="body">
+                  <div class="pad70">
+                    <h2>Tenders</h2>
+                    <p class="link">View Government Tenders</p>
+                  </div>
+                  </div>
+                </div>
+  </a>
+  
+  </div>
+  
+  <div class="col-sm-3">
+  <a href="" style="text-decoration:none">
+  <div class="box-style-2 object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                  <div class="icon-container default-bg"> <i class="fa fa-upload"></i> </div>
+                  <div class="body">
+                  <div class="pad70">
+                    <h2>Tenders</h2>
+                    <p class="link">View Government Tenders</p>
+                  </div>
+                  </div>
+                </div>
+  </a>
+  
+  </div>
+  
+  <div class="col-sm-3">
+  <a href="" style="text-decoration:none">
+  <div class="box-style-2 object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                  <div class="icon-container default-bg"> <i class="fa fa-upload"></i> </div>
+                  <div class="body">
+                  <div class="pad70">
+                    <h2>Tenders</h2>
+                    <p class="link">View Government Tenders</p>
+                  </div>
+                  </div>
+                </div>
+  </a>
+  
+  </div>
+  
+  <div class="col-sm-3">
+  <a href="" style="text-decoration:none">
+  <div class="box-style-2 object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                  <div class="icon-container default-bg"> <i class="fa fa-upload"></i> </div>
+                  <div class="body">
+                  <div class="pad70">
+                    <h2>Tenders</h2>
+                    <p class="link">View Government Tenders</p>
+                  </div>
+                  </div>
+                </div>
+  </a>
+  
+  </div>
+  <div class="col-sm-3">
+  <a href="" style="text-decoration:none">
+  <div class="box-style-2 object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                  <div class="icon-container default-bg"> <i class="fa fa-upload"></i> </div>
+                  <div class="body">
+                  <div class="pad70">
+                    <h2>Tenders</h2>
+                    <p class="link">View Government Tenders</p>
+                  </div>
+                  </div>
+                </div>
+  </a>
+  
+  </div>
+  
+  <div class="col-sm-3">
+  <a href="" style="text-decoration:none">
+  <div class="box-style-2 object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                  <div class="icon-container default-bg"> <i class="fa fa-upload"></i> </div>
+                  <div class="body">
+                  <div class="pad70">
+                    <h2>Tenders</h2>
+                    <p class="link">View Government Tenders</p>
+                  </div>
+                  </div>
+                </div>
+  </a>
+  
+  </div>
+  </div>
+  </div>
+</div>
+ <!--important links-->
+
+
+
+ <!--blog-->
+ <section class="module parallax parallax-1">
+    <div class="container">
+    <div class="row">
+     <div class="col-sm-6">
+     <br/><br/><br/>
+       <center><img src="images/vikas.png" class="img-responsive"/></center>
+       
+        </div>
+        <div class="col-sm-6">
+       
+        <center><img src="images/upmap.png"/></center>
+        </div>
+        </div>
+    </div>
+</section>
+
+ <!--blog-->
+ 
+ 
+ 
+ 
+ <!--footer-->
+  <div class="footer-bg">
+  <div class="container-fluid">
+  
+  
+  <div class="row">
+  <div class="col-sm-3">
+  <div><H3 style="margin:0; padding:0; color:#FFF">&nbsp;</H3></div>
+  <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">CM Profile</a></li>
+  <li><a href="#">CM Office</a></li>
+  <li><a href="#">State Profile</a></li>
+  <li><a href="#">Photo Gallery</a></li>
+  <li><a href="#">CM Programe</a></li>
+  </ul>
+
+  </div>
+  
+  <div class="col-sm-3">
+  <div><H3 style="margin:0; padding:0; color:#FFF">&nbsp;</H3></div>
+  <ul>
+  <li><a href="#">Contact Us</a></li>
+  <li><a href="#">Feedback</a></li>
+  <li><a href="#">CM Office</a></li>
+  <li><a href="#">State Profile</a></li>
+  <li><a href="#">Photo Gallery</a></li>
+  <li><a href="#">CM Programe</a></li>
+  </ul>
+
+  </div>
+  
+  <div class="col-sm-3">
+<div style="margin-bottom:20px;"><H3 style="margin:0; padding:0; color:#FFF">Get Social with us</H3></div>
+  
+  <a style="color:#FFF" href="">Facebook</a> <br/> <a style="color:#FFF" href="">Twitter</a>
+  
+  
+  </div>
+   <div class="col-sm-3">
+   <div style="margin-bottom:20px;"><H3 style="margin:0; padding:0; color:#FFF">CM Office Address</H3></div>
+ <p style="color:#000">Vidhan sabha, Lucknow</p>
+ <p style="color:#000"> Contact : +91 522 - 000000</p>
+ <p style="color:#000">Fax : +91 522 - 000000</p>
+ <p style="color:#000">Email Id : info@gmail.com</p>
+
+  </div>
+  
+ 
+  </div>
+  </div>
+</div>
+ <!--footer-->
+ 
+ 
+<!--bottom-->
+  <div style=" background:#000; height:10px;"></div>
+ <!--bottom-->
+
+
+
+
+
+
+
+</body>
+</html>
